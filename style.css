@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #dfe6e9;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 640px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 30px;
+}
+
+.ledger {
+  background-color: #2f3542;
+  padding: 20px;
+  color: white;
+}
+.ledger h2 {
+  text-transform: uppercase;
+}
+.ledger h2,
+.ledger h4,
+.ledger h1 {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.inc-exp-container {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+.inc-exp-container div {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 18px;
+  flex: 1;
+  border-radius: 2px;
+}
+
+.inc-exp-container div p {
+  font-size: 22px;
+}
+.inc-exp-container div.bal {
+  border: 3px solid ;
+}
+.inc-exp-container div.inc {
+  border: 3px solid #1dd1a1;
+  color: #1dd1a1;
+}
+.inc-exp-container div.exp {
+  border: 3px solid #ee5253;
+  color: #ee5253;
+}
+
+#form {
+  padding: 5px;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.btn {
+  background-color: #2e86de;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.transaction {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction h3 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+}
+
+.trans {
+  list-style-type: none;
+}
+.trans li {
+  background-color: #fff;
+  color: #333;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.trans li.inc {
+  border-left: 5px solid #1dd1a1;
+}
+.trans li.exp {
+  border-left: 5px solid #ee5253;
+
+}
+.btn-del {
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  background-color: #e74c3c;
+  border: none;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  background-color: #2e86de;
+  border: none;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+}

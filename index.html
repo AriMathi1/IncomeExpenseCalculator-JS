@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="ledger">
+      <h1>Income Expense Tracker</h1>
+      <div class="inc-exp-container">
+        <div class="bal">
+          <h4>Your Balance</h4>
+          <h2 id="balance">£ 0.00</h2>
+        </div>
+        <div class="inc">
+          <h4>Income</h4>
+          <p id="inc-amt" class="amt plus">£ 0.00</p>
+        </div>
+        <div class="exp">
+          <h4>Expense</h4>
+          <p id="exp-amt" class="amt minus">£ 0.00</p>
+        </div>
+      </div>
+
+      <form action="#" id="form">
+        <div class="form-control">
+          <label for="desc">Description</label>
+          <input type="text" name="desc" id="desc" placeholder="Enter Description" />
+        </div>
+
+        <div class="form-control">
+          <label for="amount">Amount</label>
+          <input type="number" name="amount" id="amount" placeholder="Amount" />
+        </div>
+        <button class="btn" type="submit">Add Transaction</button>
+        <button type="button" id="reset-btn">Reset</button>
+
+      </form>
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="filter" value="all" checked /> All
+      </label>
+      <label>
+        <input type="radio" name="filter" value="income" /> Income
+      </label>
+      <label>
+        <input type="radio" name="filter" value="expense" /> Expense
+      </label>
+    </div>
+
+    <div class="transaction">
+      <h3>Transaction Details</h3>
+      <ul class="trans" id="trans">
+        <li class="exp">
+          Insurance
+          <span>-1500</span>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-del">Delete</button>
+        </li>
+        <li class="inc">
+          Salary
+          <span>35000</span>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-del">Delete</button>
+        </li>
+        <li class="exp">
+          Food
+          <span>-350</span>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-del">Delete</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
